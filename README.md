@@ -1,2 +1,2 @@
-# pingone-sso-react-sdk
- React sdk for PingOne SSO
+# pingone-js-sdk
+ Javascript SDK for PingOne Platform APIs
