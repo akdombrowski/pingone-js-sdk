@@ -2,17 +2,22 @@
   "name": "pingone-js-sdk",
   "version": "1.0.0",
   "description": "Javascript SDK for PingOne Platform APIs",
-  "main": "index.js",
+  "main": "source/server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon source/server.ts",
+    "build": "rm -rf build/ && prettier --write source/ && tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/akdombrowski/pingone-js-sdk.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "pingone",
+    "api",
+    "sdk"
+  ],
+  "author": "Anthony Dombrowski",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/akdombrowski/pingone-js-sdk/issues"
   },
