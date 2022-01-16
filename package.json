@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akdombrowski/pingone-sso-react-sdk.git"
+    "url": "git+https://github.com/akdombrowski/pingone-js-sdk.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/akdombrowski/pingone-sso-react-sdk/issues"
+    "url": "https://github.com/akdombrowski/pingone-js-sdk/issues"
   },
-  "homepage": "https://github.com/akdombrowski/pingone-sso-react-sdk#readme"
+  "homepage": "https://github.com/akdombrowski/pingone-js-sdk#readme"
 }
