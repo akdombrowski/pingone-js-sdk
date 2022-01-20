@@ -23,3 +23,29 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import { getAuthorizeAuthorizationCode } from "../../src/index.js";
+
+Cypress.Commands.add(
+  "getAuthorizeAuthorizationCode",
+  (authPath, envID, clientID, redirectURI, scopes, pkce) => {
+    return new Cypress.Promise((resolve, reject) => {
+      //   const envID = "333d66b5-d2f0-48d0-8ec0-cf4cafd35d25";
+      //   const authPath = "https://auth.pingone.com";
+      //   const clientID = "84704a8e-bdaa-4262-aff2-38ec2382d6b9";
+      //   const redirectURI = "https://example.com";
+      //   const scopes = "openid profile p1:read:user";
+      //   const pkce = false;
+      getAuthorizeAuthorizationCode(
+        authPath,
+        envID,
+        clientID,
+        redirectURI,
+        scopes,
+        pkce
+      ).then(function (data) {
+        resolve(data);
+      });
+    });
+  }
+);
